@@ -1,0 +1,312 @@
+<app-header></app-header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <p class="small-title">
+      FIND YOUR DREAM JOB
+    </p>
+
+    <h1>
+      Find The Job That
+      <span>Fits Your Life</span>
+    </h1>
+
+    <p class="description">
+      Discover thousands of job opportunities from
+      top companies and take the next step in your career.
+    </p>
+
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        placeholder="Job title or keyword">
+
+      <input
+        type="text"
+        placeholder="Location">
+
+      <button routerLink="/jobs">
+        Search Jobs
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="categories">
+
+  <div class="heading">
+
+    <p>EXPLORE OPPORTUNITIES</p>
+
+    <h2>Browse Job Categories</h2>
+
+    <span>
+      Find the right opportunity based on your skills.
+    </span>
+
+  </div>
+
+
+  <div class="category-grid">
+
+    <div class="category-card" routerLink="/jobs">
+
+      <div class="icon">💻</div>
+
+      <h3>Web Development</h3>
+
+      <p>1,200+ Jobs</p>
+
+      <span>Explore Jobs →</span>
+
+    </div>
+
+
+    <div class="category-card" routerLink="/jobs">
+
+      <div class="icon purple">🎨</div>
+
+      <h3>UI/UX Design</h3>
+
+      <p>650+ Jobs</p>
+
+      <span>Explore Jobs →</span>
+
+    </div>
+
+
+    <div class="category-card" routerLink="/jobs">
+
+      <div class="icon orange">📊</div>
+
+      <h3>Marketing</h3>
+
+      <p>800+ Jobs</p>
+
+      <span>Explore Jobs →</span>
+
+    </div>
+
+
+    <div class="category-card" routerLink="/jobs">
+
+      <div class="icon green">💰</div>
+
+      <h3>Finance</h3>
+
+      <p>450+ Jobs</p>
+
+      <span>Explore Jobs →</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="featured">
+
+  <div class="heading">
+
+    <p>LATEST OPPORTUNITIES</p>
+
+    <h2>Featured Jobs</h2>
+
+    <span>
+      Explore the latest job openings.
+    </span>
+
+  </div>
+
+
+  <div class="job-list">
+
+    <div class="job-card">
+
+      <div class="company-logo">
+        G
+      </div>
+
+      <div class="job-info">
+
+        <h3>Web Developer</h3>
+
+        <p>Google</p>
+
+        <span>📍 Bangalore &nbsp; | &nbsp; 💼 Full Time</span>
+
+      </div>
+
+      <a
+        [routerLink]="['/view-details', 1]"
+        class="view-btn">
+
+        View Details
+
+      </a>
+
+    </div>
+
+
+    <div class="job-card">
+
+      <div class="company-logo purple-logo">
+        M
+      </div>
+
+      <div class="job-info">
+
+        <h3>UI/UX Designer</h3>
+
+        <p>Microsoft</p>
+
+        <span>📍 Hyderabad &nbsp; | &nbsp; 💼 Full Time</span>
+
+      </div>
+
+      <a
+        [routerLink]="['/view-details', 2]"
+        class="view-btn">
+
+        View Details
+
+      </a>
+
+    </div>
+
+
+    <div class="job-card">
+
+      <div class="company-logo orange-logo">
+        T
+      </div>
+
+      <div class="job-info">
+
+        <h3>Angular Developer</h3>
+
+        <p>TCS</p>
+
+        <span>📍 Pune &nbsp; | &nbsp; 💼 Full Time</span>
+
+      </div>
+
+      <a
+        [routerLink]="['/view-details', 3]"
+        class="view-btn">
+
+        View Details
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="all-jobs">
+
+    <a routerLink="/jobs">
+      View All Jobs →
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="why">
+
+  <div>
+
+    <p class="small-title">
+      WHY CHOOSE US
+    </p>
+
+    <h2>
+      Your Career Journey Starts Here
+    </h2>
+
+    <p class="why-text">
+      We connect talented people with great companies.
+      Find opportunities, apply easily and build your career.
+    </p>
+
+
+    <div class="feature">
+
+      <span>🔎</span>
+
+      <div>
+        <h3>Easy Job Search</h3>
+        <p>Search thousands of jobs easily.</p>
+      </div>
+
+    </div>
+
+
+    <div class="feature">
+
+      <span>🏢</span>
+
+      <div>
+        <h3>Top Companies</h3>
+        <p>Discover opportunities from companies.</p>
+      </div>
+
+    </div>
+
+
+    <div class="feature">
+
+      <span>🚀</span>
+
+      <div>
+        <h3>Apply Easily</h3>
+        <p>Apply to jobs in just a few clicks.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="career-box">
+    👩‍💻
+  </div>
+
+</section>
+
+
+<section class="cta">
+
+  <div>
+
+    <h2>
+      Ready to Find Your Dream Job?
+    </h2>
+
+    <p>
+      Start exploring opportunities today.
+    </p>
+
+  </div>
+
+  <a routerLink="/jobs">
+    Browse Jobs →
+  </a>
+
+</section>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+<div class="job-card">
+
+  <div class="company-logo">
+    {{ job.company.charAt(0) }}
+  </div>
+
+  <div class="job-content">
+    <h3>{{ job.title }}</h3>
+
+    <p class="company">
+      {{ job.company }}
+    </p>
+
+    <div class="job-details">
+      <span>📍 {{ job.location }}</span>
+      <span>💼 {{ job.type }}</span>
+      <span>💰 {{ job.salary }}</span>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="view-btn"
+    (click)="onViewDetails()">
+    View Details
+  </button>
+
+</div>

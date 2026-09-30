@@ -1,0 +1,53 @@
+<app-header></app-header>
+
+<section class="login-page">
+
+  <div class="login-card">
+
+    <h1>Welcome Back!</h1>
+
+    <p>Login to your JobPortal account.</p>
+
+
+    <form (ngSubmit)="login()">
+
+      <label>Email</label>
+
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        placeholder="Enter your email"
+        required>
+
+
+      <label>Password</label>
+
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        placeholder="Enter your password"
+        required>
+
+
+      <button type="submit">
+        Login
+      </button>
+
+    </form>
+
+
+    <p class="signup-text">
+      Don't have an account?
+
+      <a routerLink="/signup">
+        Sign Up
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+<app-footer></app-footer>
