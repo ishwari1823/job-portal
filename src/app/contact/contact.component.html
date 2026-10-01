@@ -1,128 +1,75 @@
 <app-header></app-header>
-
-<section class="contact-hero">
-
-  <p>CONTACT US</p>
-
-  <h1>
-    We'd Love To Hear From You
-  </h1>
-
-  <span>
-    Have a question? Send us a message.
-  </span>
-
+<section class="contact">
+  <div class="row">
+    <div class="col-12">
+      <p>CONTACT US</p>
+      <h1>
+        We'd Love To Hear From You
+      </h1>
+      <span>
+        Have a question? Send us a message.
+      </span>
+    </div>
+  </div>
 </section>
 
-
-<section class="contact-section">
-
-  <div class="contact-info">
-
-    <h2>
-      Get In Touch
-    </h2>
-
-    <p>
-      If you have any questions or need help,
-      feel free to contact us.
-    </p>
-
-
-    <div class="info-item">
-
-      <span>📍</span>
-
-      <div>
-        <h3>Address</h3>
-        <p>Nagpur, Maharashtra, India</p>
+<section class="content">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="contact-info">
+          <h2>
+            Get In Touch
+          </h2>
+          <p>
+            If you have any questions or need help,
+            feel free to contact us.
+          </p>
+          <div class="info-item">
+            <span>📍</span>
+            <div>
+              <h3>Address</h3>
+              <p>Nagpur, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span>📧</span>
+            <div>
+              <h3>Email</h3>
+              <p>support&#64;jobportal.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span>📞</span>
+            <div>
+              <h3>Phone</h3>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </div>
-
-
-    <div class="info-item">
-
-      <span>📧</span>
-
-      <div>
-        <h3>Email</h3>
-        <p>support&#64;jobportal.com</p>
+      <div class="col-lg-6 col-md-6 col-12">
+        <form class="contact-form" (ngSubmit)="sendMessage()">
+          <h2>
+            Send Us A Message
+          </h2>
+          <label>Name</label>
+          <input type="text" name="name" [(ngModel)]="name" placeholder="Enter your name" required>
+          <label>Email</label>
+          <input type="email" name="email" [(ngModel)]="email" placeholder="Enter your email" required>
+          <label>Subject</label>
+          <input type="text" name="subject" [(ngModel)]="subject" placeholder="Enter subject" required>
+          <label>Message</label>
+          <textarea name="message" [(ngModel)]="message" placeholder="Write your message" rows="5" required></textarea>
+          <!-- <button type="submit">
+            Send Message
+          </button> -->
+          <button id="xyz" type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-
     </div>
-
-
-    <div class="info-item">
-
-      <span>📞</span>
-
-      <div>
-        <h3>Phone</h3>
-        <p>+91 98765 43210</p>
-      </div>
-
-    </div>
-
   </div>
-
-
-  <form
-    class="contact-form"
-    (ngSubmit)="sendMessage()">
-
-    <h2>
-      Send Us A Message
-    </h2>
-
-
-    <label>Name</label>
-
-    <input
-      type="text"
-      name="name"
-      [(ngModel)]="name"
-      placeholder="Enter your name"
-      required>
-
-
-    <label>Email</label>
-
-    <input
-      type="email"
-      name="email"
-      [(ngModel)]="email"
-      placeholder="Enter your email"
-      required>
-
-
-    <label>Subject</label>
-
-    <input
-      type="text"
-      name="subject"
-      [(ngModel)]="subject"
-      placeholder="Enter subject"
-      required>
-
-
-    <label>Message</label>
-
-    <textarea
-      name="message"
-      [(ngModel)]="message"
-      placeholder="Write your message"
-      rows="5"
-      required>
-    </textarea>
-
-
-    <button type="submit">
-      Send Message
-    </button>
-
-  </form>
-
 </section>
 
 <app-footer></app-footer>

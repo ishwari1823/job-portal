@@ -18,7 +18,7 @@ export class ApplyNowComponent {
   experience = '';
   resume = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   submitApplication() {
 

@@ -1,4 +1,3 @@
-
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
@@ -22,26 +21,8 @@ export class JobCardComponent {
   // View Details
   @Output() viewJob = new EventEmitter<number>();
 
-  // Edit Job
-  @Output() editJob = new EventEmitter<any>();
-
-  // Delete Job
-  @Output() deleteJob = new EventEmitter<number>();
-
-
   onViewDetails(): void {
     this.viewJob.emit(this.job.id);
   }
 
-
-  onEdit(): void {
-    this.editJob.emit(this.job);
-  }
-
-
-  onDelete(): void {
-    this.deleteJob.emit(this.job.id);
-  }
-
 }
-

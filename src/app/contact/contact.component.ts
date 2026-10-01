@@ -6,11 +6,7 @@ import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [
-    FormsModule,
-    HeaderComponent,
-    FooterComponent
-  ],
+  imports: [FormsModule, HeaderComponent, FooterComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -22,7 +18,6 @@ export class ContactComponent {
   message = '';
 
   sendMessage() {
-
     if (
       !this.name ||
       !this.email ||
@@ -32,9 +27,7 @@ export class ContactComponent {
       alert('Please fill all fields.');
       return;
     }
-
     alert('Your message has been sent successfully!');
-
     this.name = '';
     this.email = '';
     this.subject = '';

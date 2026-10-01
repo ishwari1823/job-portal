@@ -1,75 +1,26 @@
 <app-header></app-header>
-
 <section class="signup-page">
-
   <div class="signup-card">
-
     <h1>Create Account</h1>
-
     <p>Join JobPortal and find your dream job.</p>
-
-
     <form (ngSubmit)="signup()">
-
       <label>Full Name</label>
-
-      <input
-        type="text"
-        name="name"
-        [(ngModel)]="name"
-        placeholder="Enter your name"
-        required>
-
-
+      <input type="text" name="name" [(ngModel)]="name" placeholder="Enter your name" required>
       <label>Email</label>
-
-      <input
-        type="email"
-        name="email"
-        [(ngModel)]="email"
-        placeholder="Enter your email"
-        required>
-
-
+      <input type="email" name="email" [(ngModel)]="email" placeholder="Enter your email" required>
       <label>Password</label>
-
-      <input
-        type="password"
-        name="password"
-        [(ngModel)]="password"
-        placeholder="Create password"
-        required>
-
-
+      <input type="password" name="password" [(ngModel)]="password" placeholder="Create password" required>
       <label>Confirm Password</label>
-
-      <input
-        type="password"
-        name="confirmPassword"
-        [(ngModel)]="confirmPassword"
-        placeholder="Confirm password"
+      <input type="password" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Confirm password"
         required>
-
-
       <button type="submit">
         Create Account
       </button>
-
     </form>
-
-
     <p class="login-text">
-
       Already have an account?
-
-      <a routerLink="/login">
-        Login
-      </a>
-
+      <a routerLink="/login"> Login</a>
     </p>
-
   </div>
-
 </section>
-
 <app-footer></app-footer>

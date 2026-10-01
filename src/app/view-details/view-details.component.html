@@ -1,111 +1,77 @@
-<nav class="navbar">
-
-  <div class="logo">
-    Job<span>Portal</span>
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container-fluid">
+    <a routerLink="/home" class="logo">
+      Job<span>Portal</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/jobs" routerLinkActive="active">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active"> Contact </a>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <div class="nav-links">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/jobs">Jobs</a>
-    <a routerLink="/contact">Contact</a>
-  </div>
-
 </nav>
-
-
 <section class="details-page">
-
   <div class="details-card">
-
     <div class="top-section">
-
       <div class="company-logo">
         W
       </div>
-
       <div>
         <h1>Web Developer</h1>
         <h3>ABC Technologies</h3>
-
         <p>📍 Nagpur, Maharashtra</p>
-
       </div>
-
     </div>
-
-
     <div class="job-info">
-
       <div>
         <strong>💰 Salary</strong>
         <p>₹4 - ₹8 LPA</p>
       </div>
-
       <div>
         <strong>💼 Job Type</strong>
         <p>Full Time</p>
       </div>
-
       <div>
         <strong>🕒 Experience</strong>
         <p>0 - 2 Years</p>
       </div>
-
     </div>
-
-
     <hr>
-
-
     <h2>Job Description</h2>
-
     <p>
       We are looking for a passionate Web Developer who can
       create responsive and user-friendly websites.
       The candidate should have good knowledge of HTML,
       CSS, JavaScript and Angular.
     </p>
-
-
     <h2>Skills Required</h2>
-
     <div class="skills">
-
       <span>HTML</span>
       <span>CSS</span>
       <span>JavaScript</span>
       <span>Angular</span>
       <span>Bootstrap</span>
-
     </div>
-
-
     <h2>Responsibilities</h2>
-
     <ul>
       <li>Develop responsive websites.</li>
       <li>Write clean and reusable code.</li>
       <li>Work with the development team.</li>
       <li>Fix bugs and improve website performance.</li>
     </ul>
-
-
     <div class="buttons">
-
-      <a routerLink="/jobs" class="back-btn">
-        ← Back
-      </a>
-
-      <a
-        [routerLink]="['/apply-now', jobId]"
-        class="apply-btn">
-
-        Apply Now
-
-      </a>
-
+      <a routerLink="/jobs" class="back-btn"> ← Back </a>
+      <a [routerLink]="['/apply-now', jobId]" class="apply-btn"> Apply Now </a>
     </div>
-
   </div>
-
 </section>

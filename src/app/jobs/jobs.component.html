@@ -1,22 +1,10 @@
 <app-header></app-header>
-
 <section class="jobs-page">
-
   <h1>Find Your Dream Job</h1>
-
   <p>Explore the latest job opportunities.</p>
-
-
   <div class="jobs-container">
-
-    <app-job-card
-      *ngFor="let job of jobs"
-      [job]="job"
-      (viewJob)="openJob($event)">
+    <app-job-card *ngFor="let job of jobs" [job]="job" (viewJob)="openJob($event)">
     </app-job-card>
-
   </div>
-
 </section>
-
 <app-footer></app-footer>

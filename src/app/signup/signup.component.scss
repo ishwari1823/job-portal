@@ -1,30 +1,21 @@
 :host {
   display: block;
-  font-family: Arial, sans-serif;
 }
 
 .signup-page {
   min-height: 650px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #f8fafc;
-
   padding: 60px 20px;
 }
 
 .signup-card {
   width: 450px;
-
   background: white;
-
   padding: 40px;
-
   border-radius: 12px;
-
-  box-shadow: 0 10px 35px rgba(0,0,0,.08);
 }
 
 .signup-card h1 {
@@ -37,38 +28,28 @@
 
 .signup-card label {
   display: block;
-
   margin-top: 16px;
   margin-bottom: 7px;
-
   font-size: 14px;
 }
 
 .signup-card input {
   width: 100%;
-
   padding: 13px;
-
   border: 1px solid #d1d5db;
   border-radius: 6px;
-
   outline: none;
 }
 
 .signup-card button {
   width: 100%;
-
   margin-top: 25px;
-
   padding: 13px;
-
   border: none;
   border-radius: 6px;
 
   background: #2563eb;
   color: white;
-
-  cursor: pointer;
 }
 
 .login-text {
